@@ -120,7 +120,7 @@ h6{
 }
 
 .btn-blue{
-    @apply bg-miraguro-blue text-white px-4 py-3 rounded text-sm font-bold;
+    @apply bg-miraguro-blue text-white px-5 py-4 rounded text-sm font-bold border-b-2 border-miraguro-green;
 }
 
 .cover-window{
@@ -204,4 +204,17 @@ h6{
 #groupStep1.active, #groupStep2.active, #groupStep3.active, #groupStep4.active{
     transform-origin: center center;
     animation: check-icon .3s ease-in-out;
+}
+
+.footer_nav{
+    @apply flex flex-col space-y-2;
+}
+.footer_nav a{
+    @apply text-white font-bold;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.footer_nav a:hover{
+    @apply text-white underline;
 }

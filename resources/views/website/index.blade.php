@@ -144,7 +144,7 @@
                             <path id="camino" d="M268.587 9.07727V238.924C268.587 260.409 286.004 277.826 307.489 277.826H417.226C438.711 277.826 456.128 295.244 456.128 316.729V515.778C456.128 537.263 438.711 554.68 417.226 554.68H84.2879C62.8028 554.68 45.3857 572.097 45.3857 593.582V824.078C45.3857 845.563 62.8028 862.98 84.2879 862.98H229.685C251.17 862.98 268.587 880.397 268.587 901.882V1181.98" stroke="#A3DA24" stroke-width="4.53859" />
                             <path d="M268.587 9.07727V238.924C268.587 260.409 286.004 277.826 307.489 277.826H417.226C438.711 277.826 456.128 295.244 456.128 316.729V515.778C456.128 537.263 438.711 554.68 417.226 554.68H84.2879C62.8028 554.68 45.3857 572.097 45.3857 593.582V824.078C45.3857 845.563 62.8028 862.98 84.2879 862.98H229.685C251.17 862.98 268.587 880.397 268.587 901.882V1181.98" stroke="#A19A96" stroke-width="4.53859" stroke-dasharray="5.19 5.19" />
                             <circle cx="268.749" cy="9.40136" r="9.40136" fill="#A3DA24" />
-                            <circle cx="268.749" cy="1183.6" r="9.40136" fill="#A3DA24" />
+                            <circle cx="268.749" cy="1182.2" r="9.40136" fill="#807671" />
                             <circle id="position" cx="268.749" cy="9.40136" r="9.40136" fill="#A3DA24" />
                             <!-- Profesionalismo -->
                             <g id="groupStep1">
@@ -175,11 +175,26 @@
     </section>
     <img src="{{ asset('img/curve-bottom.svg') }}" alt="" class="w-full h-auto relative -top-2">
 
-    <section style="height: 600px">
+    <section class="pt-16 pb-7">
+        <div class="container">
+            <div class="w-9/12 mx-auto flex items-center space-x-10">
+                <div class="w-6/12">
+                    <h3 class="mb-10">
+                        Un mundo <span class="text-miraguro-green-dark underline">más verde</span> comienza en tu propio espacio
+                    </h3>
 
-    </section>
+                    <p class="mb-10">
+                        Te invitamos a ser parte de esta revolución verde y a experimentar cómo cada espacio que tocas se convierte en un pequeño rincón del paraíso en la Tierra.
+                    </p>
 
-    <section style="height: 600px" class="bg-white">
-
+                    <a href="#" class="btn-blue mt-10">
+                        Conoce nuestros servicios
+                    </a>
+                </div>
+                <div class="w-6/12">
+                    <img src="{{ asset('svg/home.svg') }}" alt="" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
     </section>
 </x-website-layout>
