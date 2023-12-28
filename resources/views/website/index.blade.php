@@ -1,5 +1,5 @@
 <x-website-layout>
-
+    <!-- Cover principal -->
     <section class="py-16 pb-48 relative">
         <div class="bg-gradient-square"></div>
         <div class="container">
@@ -26,6 +26,7 @@
         </div>
     </section>
 
+    <!-- Misión y Visión -->
     <section class="pt-10 pb-0">
         <div class="container mx-auto">
             <div class="w-10/12 mx-auto">
@@ -60,6 +61,7 @@
         </div>
     </section>
 
+    <!-- Valores y animación en svg -->
     <img src="{{ asset('img/curve-top.svg') }}" alt="" class="w-full h-auto relative -bottom-2">
     <section class="bg-miraguro-brown py-2">
         <div class="container">
@@ -175,6 +177,7 @@
     </section>
     <img src="{{ asset('img/curve-bottom.svg') }}" alt="" class="w-full h-auto relative -top-2">
 
+    <!-- Invitación a ver servicios -->
     <section class="pt-16 pb-7">
         <div class="container">
             <div class="w-9/12 mx-auto flex items-center space-x-10">

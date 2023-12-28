@@ -218,3 +218,18 @@ h6{
 .footer_nav a:hover{
     @apply text-white underline;
 }
+
+.bordered-title{
+    @apply relative pb-2 mb-10
+}
+
+.bordered-title:before{
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    width: 20%;
+    @apply bg-miraguro-green;
+}

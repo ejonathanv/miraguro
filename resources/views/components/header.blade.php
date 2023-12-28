@@ -6,18 +6,21 @@
             </a>
         </div>
         <nav class="nav">
-            <a href="#" class="active">
+            <a  href="{{ route('home') }}" 
+                class="@if (request()->routeIs('home')) active @endif">
                 ¿Quiénes somos?
             </a>
-            <a href="#">
+            <a  href="{{ route('services') }}"
+                class="@if (request()->routeIs('services')) active @endif">
                 Servicios
             </a>
-            <a href="#">
+            <a  href="{{ route('programs') }}"
+                class="@if (request()->routeIs('programs')) active @endif">
                 Programas
             </a>
         </nav>
         <div>
-            <a href="#" class="btn-blue">
+            <a href="{{ route('contact') }}" class="btn-blue">
                 Contáctanos
             </a>
         </div>

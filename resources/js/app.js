@@ -29,7 +29,11 @@ function fixheader() {
 }
 
 function roadDashedLine() {
-    const animacionTop = document.getElementById("animacion").parentElement.offsetTop;
+    const animacion = document.getElementById("animacion");
+
+    if(!animacion) return;
+
+    const animacionTop = animacion.parentElement.offsetTop;
     const camino = document.getElementById("camino");
     const position = document.getElementById("position");
 

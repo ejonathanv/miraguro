@@ -4,11 +4,25 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\WebsiteController;
 
-Route::get('/', [WebsiteController::class, 'index'])->name('website.index');
-Route::get('/servicios', [WebsiteController::class, 'services'])->name('website.services');
-Route::get('/programas', [WebsiteController::class, 'programs'])->name('website.programs');
-Route::get('/terminos-y-condiciones', [WebsiteController::class, 'terms'])->name('website.terms');
-Route::get('/contacto', [WebsiteController::class, 'contact'])->name('website.contact');
+Route::get('/', [
+    WebsiteController::class, 'index'
+])->name('home');
+
+Route::get('/servicios', [
+    WebsiteController::class, 'services'
+])->name('services');
+
+Route::get('/programas', [
+    WebsiteController::class, 'programs'
+])->name('programs');
+
+Route::get('/terminos-y-condiciones', [
+    WebsiteController::class, 'terms'
+])->name('terms');
+
+Route::get('/contacto', [
+    WebsiteController::class, 'contact'
+])->name('contact');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
