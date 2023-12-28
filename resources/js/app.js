@@ -33,7 +33,7 @@ function roadDashedLine() {
 
     if(!animacion) return;
 
-    const animacionTop = animacion.parentElement.offsetTop;
+    const animacionTop = animacion.parentElement.offsetTop - 200;
     const camino = document.getElementById("camino");
     const position = document.getElementById("position");
 
@@ -50,7 +50,7 @@ function roadDashedLine() {
     const screenHeight = window.innerHeight;
 
     // Calcular la velocidad de crecimiento del camino
-    const growthSpeed = 1; // Ajusta la velocidad según tu preferencia
+    const growthSpeed = 1.2; // Ajusta la velocidad según tu preferencia
 
     // Función para actualizar la animación en función del desplazamiento
     function updateAnimation() {
@@ -100,7 +100,8 @@ function roadDashedLine() {
     updateAnimation();
 }
 
-roadDashedLine();
+window.addEventListener("load", roadDashedLine);
+
 window.onscroll = function () {
     fixheader();
 };

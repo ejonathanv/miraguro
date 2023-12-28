@@ -46,6 +46,7 @@
     </section>
 
     <img src="{{ asset('img/curve-top.svg') }}" alt="" class="w-full h-auto relative -bottom-2">
+
     <section class="py-2 bg-miraguro-brown">
         <div class="container">
             <div class="w-10/12 mx-auto flex items-center space-x-16">
@@ -63,6 +64,7 @@
             </div>
         </div>
     </section>
+    
     <img src="{{ asset('img/curve-bottom.svg') }}" alt="" class="w-full h-auto relative -top-2">
 
 </x-website-layout>
