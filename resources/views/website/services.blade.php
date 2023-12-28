@@ -27,6 +27,7 @@
         </div>
     </section>
 
+    <!-- Creacion de espacios sustentables -->
     <section class="pt-16 pb-7">
         <div class="container">
             <div class="w-10/12 mx-auto flex items-center space-x-16">
@@ -45,8 +46,10 @@
         </div>
     </section>
 
+    <!-- Curva top -->
     <img src="{{ asset('img/curve-top.svg') }}" alt="" class="w-full h-auto relative -bottom-2">
 
+    <!-- Dirección de obras y suministros técnicos -->
     <section class="py-2 bg-miraguro-brown">
         <div class="container">
             <div class="w-10/12 mx-auto flex items-center space-x-16">
@@ -64,7 +67,26 @@
             </div>
         </div>
     </section>
-    
+
+    <!-- Curva bottom -->
     <img src="{{ asset('img/curve-bottom.svg') }}" alt="" class="w-full h-auto relative -top-2">
 
+    <!-- Consultoría técnica en arquitectura e ingeniería -->
+    <section class="pt-16 pb-7">
+        <div class="container">
+            <div class="w-10/12 mx-auto flex items-center space-x-16">
+                <div class="w-7/12">
+                    <h2 class="bordered-title">
+                        Consultoría técnica en arquitectura e ingeniería
+                    </h2>
+                    <p>
+                        Ofrecemos una amplia gama de servicios de consultoría técnica en arquitectura e ingeniería. Desde urbanización, edificación y planeación hasta desarrollo de todo tipo de construcciones e infraestructura urbana, habitacionales, comerciales, industriales, recreativas y turísticas. 
+                    </p>
+                </div>
+                <div class="w-5/12">
+                    <img src="{{ asset('/img/consultoria_tecnica_en_arquitectura_e_ingenieria.png') }}" alt="" class="w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
 </x-website-layout>
