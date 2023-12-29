@@ -1,7 +1,7 @@
 <x-website-layout>
     <!-- Cover principal -->
     <section class="py-16 pb-48 relative">
-        <div class="bg-gradient-square"></div>
+        <div class="bg-gradient-square left"></div>
         <div class="container">
             <div class="w-10/12 mx-auto flex items-center space-x-32">
                 <div class="w-5/12 relative">

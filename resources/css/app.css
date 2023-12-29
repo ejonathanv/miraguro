@@ -153,6 +153,12 @@ h6{
     border-radius: 0 0 0 100px;
 }
 
+.bg-gradient-square.left{
+    right: auto;
+    left: 0;
+    border-radius: 0 0 100px 0;
+}
+
 .postit{
     border-radius: 70px 20px 70px 20px;
 }
@@ -233,4 +239,37 @@ h6{
     height: 5px;
     width: 20%;
     @apply bg-miraguro-green;
+}
+
+.list-block{
+    @apply bg-miraguro-green-light p-16;
+    border-radius: 40px 10px 40px 10px;
+}
+
+.list-block.white{
+    @apply bg-white;
+}
+
+.list-block ul{
+    @apply list-disc list-outside space-y-2;
+}
+
+.list-block.white ul{
+    @apply text-miraguro-green-dark;
+}
+
+.list-block ul li{
+    @apply text-white font-bold;
+}
+
+.list-block.white ul li{
+    @apply text-miraguro-green-dark;
+}
+
+label{
+    @apply text-miraguro-green-dark font-bold block mb-2
+}
+
+.form-control{
+    @apply border-2 border-miraguro-green rounded-lg px-5 py-4 text-miraguro-green-dark font-bold ring-0 focus:ring-0 outline-none focus:outline-none focus:border-miraguro-green-dark w-full
 }

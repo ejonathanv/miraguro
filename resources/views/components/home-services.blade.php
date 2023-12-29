@@ -10,7 +10,7 @@
                     Te invitamos a ser parte de esta revolución verde y a experimentar cómo cada espacio que tocas se convierte en un pequeño rincón del paraíso en la Tierra.
                 </p>
 
-                <a href="#" class="btn-blue mt-10">
+                <a href="{{ route('services') }}" class="btn-blue mt-10">
                     Conoce nuestros servicios
                 </a>
             </div>
