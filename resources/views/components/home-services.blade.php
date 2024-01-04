@@ -1,6 +1,6 @@
 <section class="pt-16 pb-7">
     <div class="container">
-        <div class="w-9/12 mx-auto flex items-center space-x-10">
+        <div class="w-full lg:w-9/12 mx-auto flex items-center space-x-10">
             <div class="w-6/12">
                 <h3 class="mb-10">
                     Un mundo <span class="text-miraguro-green-dark underline">más verde</span> comienza en tu propio espacio

@@ -17,7 +17,7 @@
                 </p>
             </div>
 
-            <div class="flex-1 pl-28">
+            <div class="flex-1 pl-10 lg:pl-28">
                 <h5 class="text-white font-bold mb-5">
                     Navegación
                 </h5>

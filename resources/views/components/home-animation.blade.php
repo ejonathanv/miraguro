@@ -1,7 +1,7 @@
 <img src="{{ asset('img/curve-top.svg') }}" alt="" class="w-full h-auto relative -bottom-2">
 <section class="bg-miraguro-brown py-2">
     <div class="container">
-        <div class="w-8/12 mx-auto">
+        <div class="w-full lg:w-8/12 mx-auto">
             <h2 class="text-white text-center mb-9">Nuestros Valores</h2>
             <p class="text-white text-center mb-16">
                 En Miraguro, creemos que los valores son el corazón de lo que somos y lo que hacemos. Son los cimientos de nuestra organización y guían cada paso que damos en nuestro viaje hacia la sostenibilidad y la creación de entornos comprometidos con el medio ambiente.
@@ -9,7 +9,7 @@
             <div class="flex items-center justify-center relative mr-24">
 
                 <!-- Profesionalismo -->
-                <div class="flex items-start space-x-5 absolute text-white" style="top: 70px; right: -70px; width: 350px">
+                <div class="animationDot one">
                     <div>
                         <div id="dotStep1" class="step-check">
                             <i class="fa fa-check"></i>
@@ -26,7 +26,7 @@
                 </div>
 
                 <!-- Innovación -->
-                <div class="flex items-start space-x-5 absolute text-white" style="top: 348px; left: 190px; width: 350px">
+                <div class="animationDot two">
                     <div>
                         <div id="dotStep2" class="step-check">
                             <i class="fa fa-check"></i>
@@ -43,7 +43,7 @@
                 </div>
 
                 <!-- Honestidad y respeto -->
-                <div class="flex items-start space-x-5 absolute text-white" style="top: 665px; right: 149px; width: 350px">
+                <div class="animationDot three">
                     <div>
                         <div id="dotStep3" class="step-check">
                             <i class="fa fa-check"></i>
@@ -60,7 +60,7 @@
                 </div>
 
                 <!-- Compromiso sustentable y responsable -->
-                <div class="flex items-start space-x-5 absolute text-white" style="top: 1006px; right: -70px; width: 350px">
+                <div class="animationDot four">
                     <div>
                         <div id="dotStep4" class="step-check">
                             <i class="fa fa-check"></i>

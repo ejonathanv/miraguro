@@ -70,6 +70,58 @@ h6{
     @apply text-miraguro-green-dark font-bold hover:text-miraguro-green-light;
 }
 
+@media screen and (max-width: 1024px) {
+
+    body{
+        @apply text-sm leading-6;
+    }
+
+    h1 {
+        font-size: 36px;
+        line-height: 48px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    h5 {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    h6 {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .lead {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .small {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .extra-small {
+        font-size: 10px;
+        line-height: 16px;
+    }
+}
+
 .container{
     @apply mx-auto px-5;
     max-width: 1280px;
@@ -94,7 +146,7 @@ h6{
 }
 
 .nav a{
-    @apply text-gray-600 font-bold relative;
+    @apply text-gray-600 font-bold relative text-sm md:text-sm lg:text-base;
 }
 
 .nav a:hover{
@@ -112,6 +164,13 @@ h6{
     @apply bg-miraguro-green;
 }
 
+@media screen and (max-width: 1024px) {
+    .nav a.active:before{
+        height: 3px;
+        bottom: -30px !important;
+    }
+}
+
 .header.fixed-top .nav a.active:before{
     bottom: -33px;
 }
@@ -121,7 +180,7 @@ h6{
 }
 
 .btn-blue{
-    @apply bg-miraguro-blue text-white px-5 py-4 rounded text-sm font-bold border-b-2 border-miraguro-green;
+    @apply bg-miraguro-blue text-white px-3 lg:px-5 py-3 lg:py-4 rounded text-xs lg:text-sm font-bold border-b-2 border-miraguro-green;
 }
 
 .cover-window{
@@ -161,6 +220,37 @@ h6{
 
 .postit{
     border-radius: 70px 20px 70px 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .cover-window{
+        height: 300px;
+    }
+
+    .cover-window-bg-square{
+        width: 80%;
+        height: 60px;
+        bottom: -20px;
+        right: 10%;
+    }
+
+    .bg-gradient-square{
+        width: 80vw;
+        height: 400px;
+        bottom: 0;
+        right: 0;
+        border-radius: 0 0 0 100px;
+    }
+
+    .bg-gradient-square.left{
+        right: auto;
+        left: 0;
+        border-radius: 0 0 100px 0;
+    }
+
+    .postit{
+        border-radius: 50px 20px 50px 20px;
+    }
 }
 
 /* Necesitamos crear una animacion para cuando se active el step */
@@ -217,9 +307,7 @@ h6{
     @apply flex flex-col space-y-2;
 }
 .footer_nav a{
-    @apply text-white font-bold;
-    font-size: 14px;
-    line-height: 24px;
+    @apply text-white font-bold text-xs lg:text-sm;
 }
 
 .footer_nav a:hover{
@@ -272,4 +360,35 @@ label{
 
 .form-control{
     @apply border-2 border-miraguro-green rounded-lg px-5 py-4 text-miraguro-green-dark font-bold ring-0 focus:ring-0 outline-none focus:outline-none focus:border-miraguro-green-dark w-full
+}
+
+.animationDot{
+    @apply flex items-start space-x-5 absolute text-white;
+    width: 350px;
+}
+
+.animationDot.one{
+    top: 70px; 
+    right: -70px; 
+}
+
+.animationDot.two{
+    top: 348px; 
+    left: 190px;
+}
+
+.animationDot.three{
+    top: 665px; 
+    right: 149px;
+}
+
+.animationDot.four{
+    top: 1006px; 
+    right: -70px;
+}
+
+@media screen and (max-width: 1024px) {
+    .animationDot{
+        width: 310px;
+    }
 }

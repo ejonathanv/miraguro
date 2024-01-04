@@ -1,11 +1,11 @@
 <section class="pt-10 pb-0">
     <div class="container mx-auto">
-        <div class="w-10/12 mx-auto">
-            <h2 class="text-center mb-16">
+        <div class="w-full lg:w-10/12 mx-auto">
+            <h2 class="text-center mb-10 lg:mb-16">
                 Calidad Sustentable
             </h2>
 
-            <div class="postit p-16 bg-miraguro-green-light">
+            <div class="postit p-10 lg:p-16 bg-miraguro-green-light">
                 <div class="flex items-start space-x-24 text-white">
                     <div class="w-1/2">
                         <h4 class="mb-5">
