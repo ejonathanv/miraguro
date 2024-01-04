@@ -430,3 +430,26 @@ label{
         left: -25px;
     }
 }
+
+.movileMenu{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    @apply bg-miraguro-green-dark flex-col items-center justify-center;
+}
+
+.movileMenu.active{
+    display: flex;
+}
+
+.movileMenu nav {
+    @apply flex flex-col items-center justify-center space-y-6 mb-10;
+}
+
+.movileMenu nav a{
+    @apply text-white font-bold text-xl;
+}

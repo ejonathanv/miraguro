@@ -6,6 +6,29 @@ window.Alpine = Alpine;
 
 Alpine.start();
 
+
+const mobileBtn = document.getElementById("movileMenuBtn");
+const closeBtn = document.getElementById("movileMenuCloseBtn");
+
+if (mobileBtn) {
+    mobileBtn.addEventListener("click", toggleMenu);
+    closeBtn.addEventListener("click", toggleMenu);
+}
+
+function toggleMenu() {
+    const menu = document.getElementById("movileMenu");
+    const body = document.getElementsByTagName("body")[0];
+    menu.classList.toggle("active");
+    
+    // Necesitamos saber si el menu esta activo o no para bloquear el scroll
+    if(menu.classList.contains("active")){
+        body.classList.add("overflow-hidden");
+        body.scrollTop = 0;
+    }else{
+        body.classList.remove("overflow-hidden");
+    }
+}
+
 function fixheader() {
     var header = document.getElementById("header");
     var body = document.getElementsByTagName("body")[0];
