@@ -1,15 +1,15 @@
 <x-website-layout>
     <!-- Cover principal -->
-    <section class="py-16 pb-48 relative">
+    <section class="py-10 lg:py-16 pb-32 lg:pb-48 relative">
         <div class="bg-gradient-square left"></div>
         <div class="container">
-            <div class="w-10/12 mx-auto flex items-center space-x-32">
-                <div class="w-5/12 relative">
+            <div class="w-full lg:w-10/12 mx-auto flex items-center space-x-16 lg:space-x-32">
+                <div class="w-4/12 lg:w-5/12 relative">
                     <div class="cover-window" style="background-image:url({{ asset('img/manos-alto-angulo-sosteniendo-tierra-macetas.jpg') }})"></div>
                     <div class="cover-window-bg-square"></div>
                 </div>
 
-                <div class="w-7/12">
+                <div class="w-8/12 lg:w-7/12">
 
                     <span class="font-xs font-bold">
                         Programas
@@ -30,7 +30,7 @@
     <!-- Ciclo de nutrientes -->
     <section class="pt-16 pb-7">
         <div class="container">
-            <div class="w-10/12 mx-auto flex items-center space-x-16">
+            <div class="w-full lg:w-10/12 mx-auto flex items-center space-x-16">
                 <div class="w-5/12">
                     <img src="{{ asset('img/ciclo_de_nutrientes.svg') }}" class="w-full h-auto" alt="Ciclo de nutrientes - Miraguro">
                 </div>
@@ -44,7 +44,7 @@
                 </div>
             </div>
 
-            <div class="w-10/12 mx-auto mt-24">
+            <div class="w-full lg:w-10/12 mx-auto mt-24">
                 <div class="list-block flex items-start space-x-10">
                     <div class="w-1/2">
                         <ul>
@@ -86,7 +86,7 @@
     <!-- Energía -->
     <section class="py-2 bg-miraguro-brown">
         <div class="container">
-            <div class="w-10/12 mx-auto flex items-center space-x-16">
+            <div class="w-full lg:w-10/12 mx-auto flex items-center space-x-16">
                 <div class="w-7/12">
                     <h2 class="bordered-title text-white">
                         Energía
@@ -100,7 +100,7 @@
                 </div>
             </div>
 
-            <div class="w-10/12 mx-auto mt-24">
+            <div class="w-full lg:w-10/12 mx-auto mt-24">
                 <div class="list-block flex items-start space-x-10 white">
                     <div class="w-1/2">
                         <ul>
@@ -128,7 +128,7 @@
     <!-- Agua -->
     <section class="pt-16 pb-7">
         <div class="container">
-            <div class="w-10/12 mx-auto flex items-center space-x-16">
+            <div class="w-full lg:w-10/12 mx-auto flex items-center space-x-16">
                 <div class="w-5/12">
                     <img src="{{ asset('img/agua.svg') }}" class="w-full h-auto" alt="Agua - Miraguro">
                 </div>
@@ -142,7 +142,7 @@
                 </div>
             </div>
 
-            <div class="w-10/12 mx-auto mt-24">
+            <div class="w-full lg:w-10/12 mx-auto mt-24">
                 <div class="list-block flex items-start space-x-10">
                     <div class="w-1/2">
                         <ul>

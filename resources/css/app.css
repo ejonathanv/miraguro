@@ -172,7 +172,7 @@ h6{
 }
 
 .header.fixed-top .nav a.active:before{
-    bottom: -33px;
+    bottom: -36px;
 }
 
 .nav a.active:hover{
@@ -330,7 +330,7 @@ h6{
 }
 
 .list-block{
-    @apply bg-miraguro-green-light p-16;
+    @apply bg-miraguro-green-light p-10 lg:p-16;
     border-radius: 40px 10px 40px 10px;
 }
 

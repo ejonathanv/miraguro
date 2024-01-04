@@ -1,15 +1,15 @@
 <x-website-layout>
     <!-- Cover principal -->
-    <section class="py-16 pb-48 relative">
+    <section class="py-10 lg:py-16 pb-32 lg:pb-48 relative">
         <div class="bg-gradient-square left"></div>
         <div class="container">
-            <div class="w-10/12 mx-auto flex items-center space-x-32">
-                <div class="w-5/12 relative">
+            <div class="w-full lg:w-10/12 mx-auto flex items-center space-x-16 lg:space-x-32">
+                <div class="w-4/12 lg:w-5/12 relative">
                     <div class="cover-window" style="background-image:url({{ asset('img/pexels-rachel-claire-4857760.jpg') }})"></div>
                     <div class="cover-window-bg-square"></div>
                 </div>
 
-                <div class="w-7/12">
+                <div class="w-8/12 lg:w-7/12">
 
                     <span class="font-xs font-bold">
                         Servicios
@@ -30,7 +30,7 @@
     <!-- Creacion de espacios sustentables -->
     <section class="pt-16 pb-7">
         <div class="container">
-            <div class="w-10/12 mx-auto flex items-center space-x-16">
+            <div class="w-full lg:w-10/12 mx-auto flex items-center space-x-16">
                 <div class="w-7/12">
                     <h2 class="bordered-title">
                         Creación de espacios sustentables
@@ -52,7 +52,7 @@
     <!-- Dirección de obras y suministros técnicos -->
     <section class="py-2 bg-miraguro-brown">
         <div class="container">
-            <div class="w-10/12 mx-auto flex items-center space-x-16">
+            <div class="w-full lg:w-10/12 mx-auto flex items-center space-x-16">
                 <div class="w-5/12">
                     <img src="{{ asset('/img/direccion_de_obras.png') }}" alt="" class="w-full h-auto">
                 </div>
@@ -74,7 +74,7 @@
     <!-- Consultoría técnica en arquitectura e ingeniería -->
     <section class="pt-16 pb-7">
         <div class="container">
-            <div class="w-10/12 mx-auto flex items-center space-x-16">
+            <div class="w-full lg:w-10/12 mx-auto flex items-center space-x-16">
                 <div class="w-7/12">
                     <h2 class="bordered-title">
                         Consultoría técnica en arquitectura e ingeniería
