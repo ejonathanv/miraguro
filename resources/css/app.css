@@ -142,7 +142,7 @@ h6{
 }
 
 .nav{
-    @apply flex items-center space-x-10;
+    @apply items-center space-x-10;
 }
 
 .nav a{
@@ -329,6 +329,12 @@ h6{
     @apply bg-miraguro-green;
 }
 
+@media screen and (max-width: 768px) {
+    .bordered-title:before{
+        left: calc(50% - 10%);
+    }
+}
+
 .list-block{
     @apply bg-miraguro-green-light p-10 lg:p-16;
     border-radius: 40px 10px 40px 10px;
@@ -390,5 +396,37 @@ label{
 @media screen and (max-width: 1024px) {
     .animationDot{
         width: 310px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .homeAnimationMobile{
+        /* Necesitamos hacer zoom auto para que se vea bien en mobile */
+        transform: scale(.9);
+        transform-origin: center center;
+    }
+
+    .animationDot{
+        width: 280px;
+    }
+
+    .animationDot.one{
+        top: 93px;
+        right: -23px;
+    }
+    
+    .animationDot.two{
+        top: 378px;
+        left: -25px;
+    }
+    
+    .animationDot.three{
+        top: 665px; 
+        right: -23px;
+    }
+    
+    .animationDot.four{
+        top: 958px; 
+        left: -25px;
     }
 }

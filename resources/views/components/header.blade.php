@@ -5,7 +5,7 @@
                 <x-application-logo class="fill-current text-gray-500" />
             </a>
         </div>
-        <nav class="nav">
+        <nav class="nav hidden md:flex">
             <a  href="{{ route('home') }}" 
                 class="@if (request()->routeIs('home')) active @endif">
                 ¿Quiénes somos?
@@ -19,9 +19,14 @@
                 Programas
             </a>
         </nav>
-        <div>
+        <div class="hidden md:flex">
             <a href="{{ route('contact') }}" class="btn-blue">
                 Contáctanos
+            </a>
+        </div>
+        <div class="flex md:hidden">
+            <a href="#" class="text-miraguro-green-dark text-2xl">
+                <i class="fas fa-bars"></i>
             </a>
         </div>
     </div>

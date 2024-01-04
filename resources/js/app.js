@@ -28,6 +28,7 @@ function fixheader() {
     }
 }
 
+// Animacion para desktop y tablet
 function roadDashedLine() {
     const animacion = document.getElementById("animacion");
 
@@ -100,7 +101,88 @@ function roadDashedLine() {
     updateAnimation();
 }
 
-window.addEventListener("load", roadDashedLine);
+if(window.innerWidth > 768) {
+    window.addEventListener("load", roadDashedLine);
+}
+
+
+// Animacion para mobile
+function roadDashedLineMobile() {
+    const animacion = document.getElementById("animacionMobile");
+
+    if(!animacion) return;
+
+    const animacionTop = animacion.parentElement.offsetTop - 200;
+    const camino = document.getElementById("caminoMobile");
+    const position = document.getElementById("positionMobile");
+
+    const step1 = document.getElementById("step1Mobile");
+    const step2 = document.getElementById("step2Mobile");
+    const step3 = document.getElementById("step3Mobile");
+    const step4 = document.getElementById("step4Mobile");
+
+    // Calcular la longitud total del camino
+    const pathLength = camino.getTotalLength();
+    camino.style.strokeDasharray = pathLength;
+
+    // Obtener la altura de la pantalla
+    const screenHeight = window.innerHeight;
+
+    // Calcular la velocidad de crecimiento del camino
+    const growthSpeed = 1.2; // Ajusta la velocidad según tu preferencia
+
+    // Función para actualizar la animación en función del desplazamiento
+    function updateAnimation() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Calcular el porcentaje de avance del camino
+        const progress = (scrollTop - animacionTop) * growthSpeed / screenHeight;
+
+        // Limitar el progreso a valores entre 0 y 1
+        const clippedProgress = Math.min(Math.max(progress, 0), 1);
+
+        // Calcular la posición en el camino
+        const point = camino.getPointAtLength(pathLength * clippedProgress);
+
+        // Actualizar la posición del "position"
+        position.setAttribute("cx", point.x);
+        position.setAttribute("cy", point.y);
+
+        // Actualizar la longitud visible del camino
+        camino.style.strokeDashoffset = pathLength * (1 - clippedProgress);
+
+        // Actualizar el estado de los pasos
+        // Buscamos la posicion del step1 y la comparamos con la posicion del scroll, si es mayor o igual al step1, creamos una alerta
+        let step1Position = step1.getPointAtLength(pathLength * clippedProgress).y;
+        let step2Position = step2.getPointAtLength(pathLength * clippedProgress).y;
+        let step3Position = step3.getPointAtLength(pathLength * clippedProgress).y;
+        let step4Position = step4.getPointAtLength(pathLength * clippedProgress).y;
+        
+        let allPositions = [step1Position, step2Position, step3Position, step4Position];
+
+        for (let i = 0; i < allPositions.length; i++) {
+            if(allPositions[i] <= point.y - 10){
+                document.getElementById("dotStep" + (i + 1) + "Mobile").classList.add("active");
+                document.getElementById("step" + (i + 1)).parentElement.classList.add("active");
+            }else{
+                document.getElementById("dotStep" + (i + 1) + "Mobile").classList.remove("active");
+                document.getElementById("step" + (i + 1)).parentElement.classList.remove("active");
+            }
+        }
+    }
+
+    // Escuchar eventos de desplazamiento para actualizar la animación
+    window.addEventListener("scroll", updateAnimation);
+    window.addEventListener("resize", updateAnimation);
+
+    // Inicializar la animación
+    updateAnimation();    
+}
+
+// We need to run the function only if the screen is mobile
+if (window.innerWidth <= 768) {
+    window.addEventListener("load", roadDashedLineMobile);
+}
 
 window.onscroll = function () {
     fixheader();

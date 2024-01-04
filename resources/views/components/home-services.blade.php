@@ -1,7 +1,7 @@
 <section class="pt-16 pb-7">
     <div class="container">
-        <div class="w-full lg:w-9/12 mx-auto flex items-center space-x-10">
-            <div class="w-6/12">
+        <div class="w-full lg:w-9/12 mx-auto flex flex-col md:flex-row items-center space-y-16 md:space-y-0 md:space-x-10">
+            <div class="w-full md:w-6/12 text-center md:text-left">
                 <h3 class="mb-10">
                     Un mundo <span class="text-miraguro-green-dark underline">más verde</span> comienza en tu propio espacio
                 </h3>
@@ -14,7 +14,7 @@
                     Conoce nuestros servicios
                 </a>
             </div>
-            <div class="w-6/12">
+            <div class="w-9/12 md:w-6/12">
                 <img src="{{ asset('svg/home.svg') }}" alt="" class="w-full h-auto">
             </div>
         </div>

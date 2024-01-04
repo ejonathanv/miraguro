@@ -3,11 +3,11 @@
     <section class="py-10 lg:py-16 pb-24 relative">
         <div class="container">
             <div class="w-full mx-auto flex flex-col items-center space-y-10">
-                <h1 class="text-miraguro-green-dark !leading-relaxed text-center">
+                <h1 class="text-miraguro-green-dark text-center">
                 ¡Conéctate con nosotros! <br> Tu puente hacia soluciones sustentables
                 </h1>
 
-                <a href="mailto:info@miraguro.com" class="text-2xl text-miraguro-blue inline-block">
+                <a href="mailto:info@miraguro.com" class="text-lg md:text-2xl text-miraguro-blue inline-block">
                     info@miraguro.com
                 </a>
             </div>
@@ -18,7 +18,7 @@
     <!-- Formulario de contacto -->
     <div class="bg-white pt-20 pb-60" style="margin-bottom: -190px">
         <div class="container">
-            <div class="w-10/12 lg:w-7/12 mx-auto">
+            <div class="w-full md:w-10/12 lg:w-7/12 mx-auto">
                 <p class="text-center mb-16 lead leading-relaxed">
                     Tu opinión es valiosa para nosotros. Por favor, tómate un momento para compartir tus ideas, preguntas o requerimientos a través de nuestro formulario de contacto.
                 </p>

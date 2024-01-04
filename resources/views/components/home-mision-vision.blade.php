@@ -6,8 +6,8 @@
             </h2>
 
             <div class="postit p-10 lg:p-16 bg-miraguro-green-light">
-                <div class="flex items-start space-x-24 text-white">
-                    <div class="w-1/2">
+                <div class="flex flex-col md:flex-row items-start space-y-10 md:space-y-0 md:space-x-24 text-white">
+                    <div class="w-full md:w-1/2">
                         <h4 class="mb-5">
                             Nuestra Misión
                         </h4>
@@ -17,7 +17,7 @@
                         </p>
                     </div>
 
-                    <div class="w-1/2">
+                    <div class="w-full md:w-1/2">
                         <h4 class="mb-5">
                             Nuestra Visión
                         </h4>
